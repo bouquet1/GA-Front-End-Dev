@@ -26,22 +26,155 @@ p {
 /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
 
 
-.main-nav {
+.top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background-color: black;
+  border-bottom: 5px solid #f2ff00;
+  padding: 10px 30px;
 }
 
-.main-nav nav ul {
-  list-style: none;
-  margin-top: 0;
-  padding: 0;
+.top-nav h1 a {
+  font-size: 32px;
+  color: #f2ff00;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+}
+
+.main-nav ul {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
   gap: 10px;
-  margin-right: 30px;
+  margin: 0;
+  list-style: none;
 }
 
-.secondRow {
-  background: #adadad;
+.main-nav ul a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', serif;
+  font-size: 20px;
+}
+
+.upper-case a {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+}
+
+/* second row */
+
+.secondRow p {
+  background-color: #adadad;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.cizik {
+  text-decoration: line-through;
+}
+
+.alt {
+  border-bottom: 3px solid #f2ff00;
+}
+
+/* hero */
+
+.startup-hero {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg);
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.startup-hero-box {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 380px;
+  max-height: 230;
+  padding: 4%;
+  margin: 25px;
+  align-items: flex-end;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 75%);
+}
+
+.startup-hero-box h2 {
+  font-size: 30px;
+}
+
+.yellowButton{
+  display: block;
+  background-color: #f2ff00;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  border-bottom: 2px solid #ffd900;
+}
+
+/* Last Three Column */
+
+.three-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 30px 20px;
+}
+
+.three-column-blocks {
+  border-right: 1px solid #adadad;
+}
+
+.three-column-blocks h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  }
+
+  .three-column-blocks p {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .three-column-blocks:last-child {
+    border-right: none;
+  }
+
+  /* 3 Column Buttons */
+
+  .three-column-blocks a {
+    display: block;
+    background-color: #adadad;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border-bottom: 2px solid #878787;
+    border: 2px;
+    text-align: center;
+    margin: 0 8px;
+  }
+
+  /* footer */
+.site-footer {
+  display: block;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  padding: 15px 25px;
+  font-family: 'Lato', sans-serif;
 }
