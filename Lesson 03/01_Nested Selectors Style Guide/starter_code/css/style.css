@@ -79,6 +79,10 @@ a {
   font-size: 30px;
 }
 
+.relaxr-corestyles em{
+  font-style: italic;
+}
+
 .relaxr-corestyles p.featuredText em {
   font-style: normal;
 }
@@ -89,29 +93,26 @@ a {
 
 .relaxr-corestyles ul,
 .relaxr-corestyles ol {
-  margin-top: 30px;
-  margin-right: 0;
-
+  margin: 30px 0 30px 80px;
 }
 
 .relaxr-corestyles ol ol,
 .relaxr-corestyles ul ul {
-  margin:12 px 0 12px 40px ;
+  margin: 12 px 0 12px 40px ;
 }
 
 .relaxr-corestyles ul {
   list-style-type: disc;
 }
 
-.relaxr-corestyles ol{
-  list-style: decimal ;
+.relaxr-corestyles ol {
+  list-style: decimal;
 }
 
 Bonus
 .relaxr-corestyles ol ol {
   list-style: upper-roman;
 }
-
 
 
 
