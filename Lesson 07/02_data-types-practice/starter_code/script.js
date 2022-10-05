@@ -4,7 +4,8 @@
 const message = "hello";
 const recepient = "world";
 
-console.log(message + " " + recepient + '!');
+console.log(message + " " + recepient + "!");
+
 
 // One plus one is...? Research as many ways as you can for adding 1 to the number variable.
 // Then, console.log the phrase "1 + 1 is 2" by using the updated value of the number variable.
@@ -23,10 +24,36 @@ const programmingIsCool = true;
 const clearancePrice = 1.99;
 const lifeTheUniverseAndEverything = 42;
 const theCruelestMonth = "April";
-iDoNotKnow = 
+const iDoNotKnow = null;
 
+// Type of tells us what type of data is in the variable.
+
+// this is boolean because it is true or false.
 console.log(typeof programmingIsCool);
+
+// it comes as a number and the specific type is float
 console.log(typeof clearancePrice);
+
+// it comes as a number 
 console.log(typeof lifeTheUniverseAndEverything);
-console.log(typeof iDoNotKnow);
+
+// it comes up as a string
 console.log(typeof theCruelestMonth);
+
+// it comes up as undefined because iDontExist is not defined above 
+console.log(typeof iDoNotExist);
+
+// null comes as object. we'll learn later
+console.log(typeof iDoNotKnow);
+
+if(typeof iDoNotExist == 'undefined'){
+    console.log('iDontExist has not been set');
+}
+
+// writing a function example
+function addMe(firstVal, secondVal){
+    console.log(firstVal + secondVal)
+}
+
+addMe(2,2);
+addMe(27817999, 10000000);
