@@ -42,7 +42,8 @@ function compare(me, opponent) {
         } else if (opponent === 'rock') {
             return 'My scissor got crushed! >:)';
         }
-    } else {
+    } 
+    else { 
         return "That doesn't make any sense!"
     }
 };
