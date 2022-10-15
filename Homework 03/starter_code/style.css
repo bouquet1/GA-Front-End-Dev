@@ -144,6 +144,16 @@ body{
     margin: 0;
 }
 
+
+.div-box{
+    overflow: hidden;
+/* do not let anythng inside the box */
+}
+
+
+
+
+
 /* footer1 */
 
 
