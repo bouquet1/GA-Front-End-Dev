@@ -1,0 +1,147 @@
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Colors */
+/* Redish / Pink: #ff5358 */
+/* Dark red for button hover: #e00007 */
+/* Very light gray for backgrounds: #efefef */
+/* Very light gray for borders: #dbdbdb */
+/* Dark gray for footer: #0e0f0f */
+/* White for text and backgrounds: #FFFFFF */
+
+
+/* Background image links */
+/* Hero: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg */
+/* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+/* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+/* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
+
+.airBnB-topnav {
+display: flex;
+justify-content: space-between; 
+/* space between because we want the logo and nav kicked as far apart as possible  */
+align-items: center;
+/* align item: center; allows the items retain their normal height. before adding this the airbnb logo strecthed  */
+}
+
+.airBnB-topnav img {
+  /* we target the logo alone to play with it. logo is inside topnav and the tag it has is img */
+  max-width:100px;
+  height: auto;
+  padding: 10px 30px;
+}
+
+.airBnB-topnav nav ul {
+  list-style: none;
+  /* list style none to get rif od the bullets if the ul in the nav */
+  margin: 0;
+  padding: 0;
+  /* zero margin and padding so there is no spacing between. we'll space them out with gap*/
+  display: flex;
+  /* listeledigimiz li lerin yanyana gelmesini sagladi */
+  gap: 10px;
+  /* to space the list items out (li inside ul inside nav) */
+  margin-right: 30px;
+}
+
+/* NAV DEKI LINK OLAN KELIMELERIN RENGINI DEGISTIR VE ALT CIGIYI KALDIR listedeki itemlarin rengini degistirmek ve alt cizgiyi kaldirmak icin a tagi hedef aldik cunku a tag linkten dolayi blue ve tiklaninca purple oluyor oysa biz linke bagli olan o kelimeleri white istiyoruz */
+.airBnB-topnav nav ul li a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Hero */
+
+.airBnB-hero {
+  background-image: url(melbourne.jpg);
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.airBnB-hero-box {
+  color: white;
+  max-width: 400px;
+}
+
+.airBnB-hero-box h1 {
+  font-size: 60px;
+  text-align: center; 
+}
+
+.airBnB-hero-box p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  margin-top:0;
+}
+
+/* Button */
+
+.airBnB-button {
+  display: block;
+  background: #ff5358;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.airBnB-button:hover {
+  background: #e00007;
+}
+
+/* airBnB-locals */
+
+.airBnB-locals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #efefef;
+  padding: 40px 20px;
+}
+
+/* airBnB-locals-note */
+
+.airBnB-locals-note {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+}
+
+.airBnB-locals-note h1 {
+  background: #efefef;
+  padding: 10px;
+  font-size: 14px;
+  grid-column: span 2;
+}
+
+.airBnB-locals-note img {
+  margin: 10px;
+}
+
+/*  position: fixed; to fix the nav bar on the top */
+
+/* example for moving specific clas left right 
+.topNavLeft{
+    position: relative;
+    /* position the left nav close to logo. different justify-content didn't work so husbie showed me this trick
+    right: 300px;
+  to arrange how close to the logo at the left side */

@@ -3,14 +3,173 @@
 /* Gray: #e8e9ea  / RGBA (232,233,234,1) */
 /* Dark Text: #3b4144 / RGBA (59,65,68,1) */
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+}
+
+/* Header */
 .topNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(32, 192, 99, 1);
+    position: fixed;
+    /* to fix the nav bar on the top */
+    width: 100%;
+    top: 0px;
 }
 
 .logo{
     min-width: 80px;
-    padding: 5px 10px;
+    padding: 10px 20px;
+}
+.topNavLeft{
+    position: relative;
+    /* position the left nav close to logo. different justify-content options didn't work so husbie showed me this trick */
+    right: 300px;
+    /* to arrange how close to the logo at the left side */
+}
+
+.topNavLeft ul{
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    list-style: none;
+    /* list style none to get rid of the bullets */
+    margin: 0;
+    padding: 0;
+    /* zero margin and padding so there is no spacing between uls */
+    gap: 20px;
+}
+
+.topNavRight ul{
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    list-style: none;
+    padding-right: 30px;
+    margin: 0;
+    padding: 0;
+    /* zero margin and padding so there is no spacing between ul's li */
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.topNav a{
+    color: white;
+    text-decoration: none;
+}
+
+/* second row */
+.secondRow{
+    margin-top: 70px;
+}
+
+.secondRow ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.secondRowLeft{
+    font-weight: bold;
+}
+
+/* HERO */
+.heroGridArea {
+    grid-gap: 15px;
+    background-color: rgb(73, 76, 80);
+    padding: 15px;
+}
+
+.heroGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+}
+
+.house1{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+}
+
+.house-image{
+    width: 100%;
+    height: 260px;
+    background-position: center;
+    background-size: cover;
+    /* cover for wraping the pic inside the div */
+}
+
+.arrow-svg{
+    height: 20px;
+}
+
+.house-prices{
+    display: flex;
+
+}
+
+.house-prices h1{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.houseInfo ul{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.houseFacts{
+    list-style: none;
+}
+
+
+.houseInfo ul li{
+    margin: 0;
+    padding: 0 5px 0 0;
+}
+
+.houseInfo img{
+    height: 14px;
+}
+
+.houseAddress{
+    margin: 0;
+}
+
+/* footer1 */
+
+
+
+
+/* 20010 Real Estate Insights */
+
+
+
+
+/* footer2 */
+/* I copied and paste header and adjust it as a footer for consistency */
+.bottomNav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(59,65,58,1);
+}
+
+.bottomNav2 ul{
+  list-style: none;  
+  display: flex;
+  gap: 12px;
+}
+
+.bottomNav2 a{
+    color: white;
+    text-decoration: none;
 }
