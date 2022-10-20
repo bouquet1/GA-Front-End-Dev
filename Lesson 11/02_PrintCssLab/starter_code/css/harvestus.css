@@ -188,20 +188,26 @@ body {
 
 /* Create a media query to target print only */
 
+@media print{
     /* Hide Navigation */
-
-
-
-
+    .pcl_topnav {
+        display: none;
+    }
+    .pcl_footer .pcl_navBlock{
+        display: none;
+    }
     /* Hide Upsells */
-
+    .pcl_productbar {
+    display: none;
+}
 
     /* Set widths */
-
+    .pcl_contentOuter {
+        width: 7in;
+    }
 
     /* Add borders to the table */
 
-
-
+}
 
 

@@ -1,0 +1,100 @@
+/*
+ * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * Dark Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  color: #1b1f23;
+  margin:0;
+  height:auto;
+  display:block;
+  width:100%;
+  overflow-x:hidden;
+}
+
+
+/* Header */
+
+.container_fixed{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site_header_inner{
+  display: flex;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.navigation ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a{
+  color: #66727c;
+  text-decoration: none;
+}
+
+/* Hero */
+
+.rover_hero_container{
+  background-image: url(../img/hero.jpg);
+  /* cover command tell the pic to stay inside rover hero comtainer and cover it nicely */
+  background-size: cover;
+  /* overflow: hidden: do not let anything escape this box. yoiu may not escape your box. */
+  overflow: hidden;
+}
+
+.hero_callout{
+  max-width: 500px;
+  margin: 120px 0;
+  padding: 20px;
+  color: #66727c;
+}
+
+.hero_callout .hero_hdr{
+  font-size: 3rem;
+}
+
+.hero_callout .hero_tagline{
+  font-size: 2rem;
+}
+
+/* button we will use it at multiple places */
+.btn{
+  color: white;
+  text-decoration: none;
+  background: #14a96d;
+  display: inline-block;
+  /* inline block: with only inline it will float in the text  */
+  padding: 20px 40px;
+  min-width: 220px;
+  text-align: center;
+  border-radius: 5px;
+}
