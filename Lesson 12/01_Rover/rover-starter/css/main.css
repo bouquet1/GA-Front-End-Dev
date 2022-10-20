@@ -98,3 +98,52 @@ body {
   text-align: center;
   border-radius: 5px;
 }
+
+/* hover anytime hover with the element this changes below that we targeted with saying hover happens. yani biri hover command i ekledigimiz yere mouse ile gelip hover yapinca ne olacagini soyluyor asagidaki .btn:hover bracelet grubu*/
+
+
+
+@media (max-width: 1150px){
+  .hero_callout{
+    background: white;
+  }
+}
+
+@media (max-width: 760px){
+  .rover_hero_container{
+    background: none;
+  }
+
+  .hero_callout{
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .hero_callout .hero_hdr{
+    display: none;
+  }
+
+  .hero_callout .hero_tagline{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .hero_callout .btn{
+    min-width: 100%;
+  }
+}
+
+/* Middle Section */
+.rover_middle_section .section_hdr{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+/* ortaladigimiz ana basligin altindaki ikili colon seklindeki kisim */
+
+
+
+
+
+
