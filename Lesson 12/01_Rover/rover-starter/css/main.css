@@ -30,25 +30,51 @@ body {
 }
 
 
-/* Header */
-
 .container_fixed{
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* 
+target all a tags and do this when a tags visited and/or mouse is hoovered on it. How to avoid a tags turn into purple after clicked.
+a,
+a:visited {
+  text-decoration: none;
+  color: #06748a;
+}
+a:hover {
+  color: #033641;
+}
+ */
+
+ /* Header */
 .site_header_inner{
   display: flex;
+  padding-top: 20px;
+  overflow: hidden;
 }
 
-.navigation{
+/* menu bar at the right upper corner */
+.site_header_inner .burger{
+  display: none;
+}
+
+.site_header_inner .logo{
+  margin: 0 20px 0 0;
+}
+
+.site_header_inner .logo img{
+  max-width: 180px;
+}
+
+.site_header_inner .navigation{
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
 
-.navigation ul{
+.site_header_inner .navigation ul{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -56,18 +82,23 @@ body {
   gap: 20px;
 }
 
-.navigation a{
+.site_header_inner .navigation ul a{
   color: #66727c;
   text-decoration: none;
+  font-size: 19px;
 }
 
-/* Hero */
+.site_header_inner .sign_up{
+  margin-right: 10px;
+}
+
+/* Hero Container*/
 
 .rover_hero_container{
   background-image: url(../img/hero.jpg);
   /* cover command tell the pic to stay inside rover hero comtainer and cover it nicely */
   background-size: cover;
-  /* overflow: hidden: do not let anything escape this box. yoiu may not escape your box. */
+  /* overflow: hidden: do not let anything escape this box. you may not escape your box. */
   overflow: hidden;
 }
 
@@ -80,10 +111,12 @@ body {
 
 .hero_callout .hero_hdr{
   font-size: 3rem;
+  /* 3rem = 48px */
 }
 
 .hero_callout .hero_tagline{
   font-size: 2rem;
+/* 2rem = 32px */
 }
 
 /* button we will use it at multiple places */
@@ -92,16 +125,20 @@ body {
   text-decoration: none;
   background: #14a96d;
   display: inline-block;
-  /* inline block: with only inline it will float in the text  */
+  /* inline block: with only inline it will float in the text.  Compared to display: inline , the major difference is that display: inline-block allows to set a width and height on the element. Also, with display: inline-block , the top and bottom margins/paddings are respected, but with display: inline they are not.*/
   padding: 20px 40px;
-  min-width: 220px;
+  min-width: 200px;
   text-align: center;
   border-radius: 5px;
 }
 
-/* hover anytime hover with the element this changes below that we targeted with saying hover happens. yani biri hover command i ekledigimiz yere mouse ile gelip hover yapinca ne olacagini soyluyor asagidaki .btn:hover bracelet grubu*/
+/* hover: anytime someone hover on the button the properties will change whatever is defines inside .btn:hover */
 
 
+.btn:hover {
+  background: #0d784d;
+  color: white;
+}
 
 @media (max-width: 1150px){
   .hero_callout{
@@ -125,6 +162,7 @@ body {
 
   .hero_callout .hero_tagline{
     font-size: 1.5rem;
+    /* 1.5rem = 24px */
     font-weight: bold;
   }
 
@@ -133,12 +171,15 @@ body {
   }
 }
 
+/* Rover Facts Container */
 /* Middle Section */
 .rover_middle_section .section_hdr{
   text-align: center;
   font-size: 1.5rem;
   margin-top: 4rem;
+  /* 1.5rem = 24px, 4rem = 64px */
 }
+
 
 /* ortaladigimiz ana basligin altindaki ikili colon seklindeki kisim */
 
