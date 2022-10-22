@@ -35,17 +35,16 @@ body {
   margin: 0 auto;
 }
 
-/* 
-target all a tags and do this when a tags visited and/or mouse is hoovered on it. How to avoid a tags turn into purple after clicked.
+/* target all a tags and do this when a tags visited and/or mouse is hoovered on it. How to avoid a tags turn into purple after clicked. */
 a,
 a:visited {
   text-decoration: none;
   color: #06748a;
 }
+
 a:hover {
   color: #033641;
 }
- */
 
  /* Header */
 .site_header_inner{
@@ -55,9 +54,10 @@ a:hover {
 }
 
 /* menu bar at the right upper corner */
-.site_header_inner .burger{
+/* .site_header_inner .burger{
   display: none;
-}
+  cursor: pointer;
+} */
 
 .site_header_inner .logo{
   margin: 0 20px 0 0;
@@ -120,7 +120,8 @@ a:hover {
 }
 
 /* button we will use it at multiple places */
-.btn{
+.btn,
+.btn:visited{
   color: white;
   text-decoration: none;
   background: #14a96d;
@@ -132,7 +133,7 @@ a:hover {
   border-radius: 5px;
 }
 
-/* hover: anytime someone hover on the button the properties will change whatever is defines inside .btn:hover */
+/* hover: anytime someone hover on the button, the properties will change whatever is defines inside .btn:hover */
 
 
 .btn:hover {
@@ -180,11 +181,97 @@ a:hover {
   /* 1.5rem = 24px, 4rem = 64px */
 }
 
+/* heronun altinda ortaladigimiz ana basligin 'services for every dog and cay' altindaki ikili colon seklindeki kisim */
 
-/* ortaladigimiz ana basligin altindaki ikili colon seklindeki kisim */
+.rover_facts_2col{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 760px){
+  .rover_facts_2col{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 
 
+.rover_facts_2col ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rover_facts_container ul li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+
+.rover_facts_container ul li h2{
+  margin-bottom: 0;
+}
+
+.rover_facts_container ul li p{
+  margin-top: 8px;
+}
+
+/* rover_cta_box */
+.rover_cta_box{
+  border: 1px solid #cfd7de;
+  border-radius: 5px;
+  /* hoca margin right vermemis ama bende cok kenarda gozukuyor ondan verdim. */
+  margin-right: 20px;
+}
+
+.rover_cta_header{
+  display: flex;
+  background-color: #f4f5f6;
+  gap: 20px;
+  padding: 20px;
+}
+
+.rover_cta_header img{
+  max-height: 60px;
+  width: auto;
+}
+
+.rover_cta_box_content{
+  padding: 20px;
+}
+
+.rover_cta_box_content > *:last-child {
+  margin-bottom: 0;
+}
+
+.rover_cta_box_content .rover_facts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rover_cta_box_content .rover_facts li{
+  margin-bottom: 20px;
+}
+
+.rover_cta_box_content .fas{
+  color: #14a96d;
+}
+
+.rover_cta_box_content .btn{
+  min-width: 100%;
+}
+
+.rover_protections{
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+@media (min-width:761px){
+  .rover-mobile-hero{
+    display: none;
+  }
+}
 
 
-
-
+  
