@@ -47,6 +47,9 @@ a:hover {
 }
 
  /* Header */
+
+ /* DESKTOP */
+@media (min-width:1200px){
 .site_header_inner{
   display: flex;
   padding-top: 20px;
@@ -54,10 +57,9 @@ a:hover {
 }
 
 /* menu bar at the right upper corner */
-/* .site_header_inner .burger{
+.site_header_inner .burger{
   display: none;
-  cursor: pointer;
-} */
+}
 
 .site_header_inner .logo{
   margin: 0 20px 0 0;
@@ -91,6 +93,37 @@ a:hover {
 .site_header_inner .sign_up{
   margin-right: 10px;
 }
+ }
+
+ /* TABLETS */
+ @media (max-width:1200px){
+  .site_header_inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .site_header_inner .logo{
+    margin: 10px 5px;
+  }
+  
+  .site_header_inner .logo img{
+    max-width: 180px;
+  }
+  
+  .site_header_inner .navigation{
+    display: none;
+    cursor: pointer;
+  }
+  .burger{
+    display:block;
+    margin: 30px 30px 20px 0;
+    color: black;
+    font-size: 25px;
+  }
+   }
+  
+
+
 
 /* Hero Container*/
 
