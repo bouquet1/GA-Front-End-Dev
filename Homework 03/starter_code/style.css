@@ -77,22 +77,74 @@ body{
     font-weight: bold;
 }
 
+
 /* HERO */
-.heroGridArea {
-    grid-gap: 15px;
-    background-color: rgb(73, 76, 80);
+/* .heroGridArea {
+    background-color: rgba(232,233,234,1);
     padding: 15px;
-}
+} */
 
 .heroGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(232,233,234,1);
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.div-box{
     background-color: white;
 }
+
 
 .house1{
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
 }
+
+.house2{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg);
+}
+
+.house3{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg);
+}
+
+.house4{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg);
+}
+
+.house5{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg);
+}
+
+.house6{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg);
+}
+
+.house7{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg);
+}
+
+.house8{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg);
+}
+
+.house9{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg);
+}
+
+.house10{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg);
+}
+
+.house11{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg);
+}
+
+.house12{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg);
+}
+
 
 .house-image{
     width: 100%;
@@ -152,12 +204,29 @@ body{
 
 
 
-
-
 /* footer1 */
 
+.firstFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.firstFooter .firstLine{
+    display: flex;
+}
 
+.firstFooter .firstLine ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 10px;
+    margin
+}
+
+.firstLine ul a{
+    color: #20c063;
+}
 
 /* 20010 Real Estate Insights */
 
