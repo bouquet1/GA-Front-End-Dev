@@ -9,7 +9,7 @@ function addFour(inputNumber){
 
 console.log(addFour(4));
 console.log(addFour(-1));
-console.log(addFour(36));
+console.log(addFour(37));
 
 // 1. Square of a number
 
@@ -17,13 +17,10 @@ console.log(addFour(36));
 // The function will return the argument times itself (the square of the number)
 
 function squared(math2){
-    return math2 * math2
+    let result = math2 * math2
+    return result
 }
-// or
-//     function squared(math2){
-//     let result = math2 * math2
-//     return result
-// }
+
 
 console.log(squared(2));
 console.log(squared(5));
@@ -37,10 +34,6 @@ console.log(squared(-3));
 // So: stringLength("hello") would return 5
 
 
-function stringLength(x){
-    let newLength = x.newLength
-    return newLength
-}
 
 console.log(stringLength("testing"))
 console.log(stringLength("This is a longer string."))

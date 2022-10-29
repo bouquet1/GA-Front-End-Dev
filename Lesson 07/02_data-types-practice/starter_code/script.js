@@ -5,7 +5,8 @@ const message = "hello";
 const recepient = "world";
 
 console.log(message + " " + recepient + "!");
-
+// in JS you can use both double quote or single quote k=just don't mix them. If you start with double quote close it with double quote. If you start with single quote close it with single quote.
+console.log(message + ' ' + recepient + '!');
 
 // One plus one is...? Research as many ways as you can for adding 1 to the number variable.
 // Then, console.log the phrase "1 + 1 is 2" by using the updated value of the number variable.
@@ -40,7 +41,7 @@ console.log(typeof lifeTheUniverseAndEverything);
 // it comes up as a string
 console.log(typeof theCruelestMonth);
 
-// it comes up as undefined because iDontExist is not defined above 
+// it comes up as undefined because iDontExist is not defined above as a variable
 console.log(typeof iDoNotExist);
 
 // null comes as object. we'll learn later
@@ -57,3 +58,63 @@ function addMe(firstVal, secondVal){
 
 addMe(2,2);
 addMe(27817999, 10000000);
+
+
+function hal(myName){
+    console.log("I'm sorry, " + myName + ". I can't do that.")
+}
+
+hal('Dabby');
+// console output= I'm sorry, Dabby. I can't do that.
+
+function borek(tomato, cucumber) {
+    console.log("Would you like to have your pastry with " + tomato + " or " + cucumber + "?")
+}
+
+borek('potato', 'cheese');
+// console output= Would you like to have your pastry with potato or cheese?
+
+function cocoa(Ingr1, Ingr2){
+    console.log("Do you want " + Ingr1 + " or " + Ingr2 + " in your cocoa?")
+}
+
+cocoa('extra sugar', 'extra milk');
+// console output= Do you want extra sugar or extra milk in your cocoa?
+
+cocoa('sugar', 'cinnamon');
+// Do you want sugar or cinnamon in your cocoa?
+
+function divide(a,b){
+    console.log(a / b)
+}
+
+divide(12,2);
+// in console = 6
+divide(100, 5);
+// in console = 20
+
+function nameFun(myName){
+    let nameLength = myName.length;
+    console.log("The name " + myName + ' has ' + nameLength + ' letters.')
+}
+// single or double quotes didn't matter and the function still worked.
+
+nameFun('Dave');
+nameFun('Tor');
+// The name Dave has 4 letters.
+// The name Tor has 3 letters.
+
+
+function quest(person){
+    console.log('Hey, ' + person + ' Do you like to drink tequila?')
+}
+
+quest('Daniel');
+quest('Nelly');
+quest('Buket');
+// Hey, Daniel Do you like to drink tequila?
+// Hey, Nelly Do you like to drink tequila?
+// Hey, Buket Do you like to drink tequila?
+
+document.write("<h1>'Do you like to drink tequila?</h1>");
+// output in the webpage is 'Do you like to drink tequila?
