@@ -19,7 +19,7 @@ console.log(addFour(36));
 function squared(math2){
     return math2 * math2
 }
-// or
+// or this could work too
 //     function squared(math2){
 //     let result = math2 * math2
 //     return result
@@ -38,12 +38,20 @@ console.log(squared(-3));
 
 
 function stringLength(x){
-    let newLength = x.newLength
+    let newLength = x.length
     return newLength
 }
 
 console.log(stringLength("testing"))
 console.log(stringLength("This is a longer string."))
+
+// I also wrote this and put in the log and it worked, too!
+// function stringLength(x){
+//     outputString = x.length
+//     return outputString
+// }
+
+
 
 
 // 3. Add two numbers together
@@ -51,12 +59,23 @@ console.log(stringLength("This is a longer string."))
 // Create a function called addNumbers
 // Takes two arguments and returns the sum of those arguments
 
-// console.log(addNumbers(4, 2));
-// console.log(addNumbers(6, 3));
+function addNumbers(one, two){
+    return one + two
+}
+
+console.log(addNumbers(4, 2));
+console.log(addNumbers(6, 3));
+console.log(addNumbers(2, 8));
 
 // 4. Create a function called sayHello
 // Takes one argument
 // Returns a string that is the combination of "Hello, " + the argument passed into the function
 // So sayHello("Paul") would return "Hello, Paul";
 
-// console.log(sayHello("Paul"));
+function sayHello(userNAme){
+    let sentence = ("Hello, " +userNAme)
+    return sentence
+}
+
+console.log(sayHello("Paul"));
+console.log(sayHello("Buket"));
