@@ -14,8 +14,9 @@ ballEl.addEventListener('click', function() {
   } else {
     declareWinner();
   }
-)}
 
-function declareWinner() {
+
+function declareWinner(){
   document.body.classList.add('game-over');
+  comsole.log(works);
 }
