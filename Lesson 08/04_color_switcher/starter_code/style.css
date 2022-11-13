@@ -38,6 +38,7 @@ p {
   background: white;
 }
 
+/* burayi lab de sonradan ekledik. in html we don't have any class says darkmode. Htmli ellemedik css i manipule ediyoruz. */
 .darkMode {
 background: gray;
 color: white;
