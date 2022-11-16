@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+   font-family: 'Italiana', serif; 
+}
+
+nav{
+    background-color: #222;
+    padding: 5px 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: rgb(216, 166, 40);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.menu li{
+    font-size: 17px;
+    padding: 15px 5px;
+}
+
+.menu li a{
+    display: block;
+}
+
+/* .logo a{
+    font-size: 18px;
+    color: rgb(230, 171, 23);
+    font-weight: bold;
+} */
+
+/* .menu li.logo img{
+    width: 150px;
+    border: 2px solid  rgb(230, 171, 23);
+    border-radius: 10px;
+} */
+
+.button{
+    border-bottom: 1px solid rgb(66, 65, 65);
+}
+
+/* Mobile Screen */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+/* MOBILE MENU */
+/* header */
+.toggle{
+    order: 1;
+}
+
+.item.button{
+    order: 2;
+}
+
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+.toggle{
+    cursor: pointer;
+}
+
+.hamburgerBar{
+    background: rgb(230, 171, 23);
+    display: inline-block;
+    height:2px;
+    position:relative;
+    width:18px;
+}
+
+
+.hamburgerBar::before,.hamburgerBar::after{
+    background: rgb(230, 171, 23);
+    display: inline-block;
+    height:2px;
+    position:absolute;
+    width:18px;
+    content:"";
+}
+.hamburgerBar::before{
+    top: 5px;
+}
+
+.hamburgerBar::after{
+    top: -5px;
+}
+.menu li.logo img{
+    width: 90px;
+    border: 2px solid  rgb(230, 171, 23);
+    border-radius: 10px;
+}
+
+/* HERO Container Sliding Images */
+.TaglineBox{
+    background-image: url("../images/red\ bracelet1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-top: 20px;
+    border-top: 2px solid  rgb(230, 171, 23);
+    border-bottom: 2px solid rgb(230, 171, 23);
+}
+
+.TaglineBox .TaglineBox-title{
+   float: left;
+   padding: 35px 20px;
+   font-size: 40px;
+   font-family: 'Italiana', serif;
+}
+
+.TaglineBox .love{
+   float: left;
+   padding-left: 20px;
+   font-size: 30px;
+}
+
+
+
+/* IPAD MENU */
+/* Header */
+@media all and (min-width:760px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle{
+        order: 2;
+    }
+    .button{
+        border: 0;
+    }
+    .button a{
+        padding: 8px 15px;
+        background: white;
+        color: black;
+        border: 2px solid  rgb(230, 171, 23);
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .button a:hover{
+        transition:all .25s;
+        color: rgb(207, 149, 2);
+    }
+    .menu li.logo img{
+        width: 120px;
+        border: 2px solid  rgb(230, 171, 23);
+        border-radius: 10px;
+    }
+}
+
+/* DESKTOP MENU */
+/* header */
+@media all and (min-width:1200px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+    .menu li.logo img{
+        width: 150px;
+        border: 2px solid  rgb(230, 171, 23);
+        border-radius: 10px;
+    }
+    /* .button a{
+        background-color: black;
+        color: rgb(207, 149, 2);
+    } */
+}
+
+/* MAIN CATEGORIES */
+
+
+
+
+
+/* footer1 */
+
+.footer-box{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+}
+
+.firstFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.firstFooter .firstLine{
+    display: flex;
+}
+
+.firstFooter .firstLine ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 10px;
+}
+
+.firstLine ul a{
+    color: rgb(216, 166, 40);
+}
+
+.bottomNav2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.bottomNavItem{
+    color :blueviolet;
+}
