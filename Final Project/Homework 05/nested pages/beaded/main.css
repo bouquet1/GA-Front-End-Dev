@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+   font-family: 'Italiana', serif; 
+}
+
+nav{
+    background-color: #222;
+    padding: 5px 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: rgb(216, 166, 40);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.menu li{
+    font-size: 17px;
+    padding: 15px 5px;
+}
+
+.menu li a{
+    display: block;
+}
+
+/* .logo a{
+    font-size: 18px;
+    color: rgb(230, 171, 23);
+    font-weight: bold;
+} */
+
+/* .menu li.logo img{
+    width: 150px;
+    border: 2px solid  rgb(230, 171, 23);
+    border-radius: 10px;
+} */
+
+.button{
+    border-bottom: 1px solid rgb(66, 65, 65);
+}
+
+/* Mobile Screen */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+/* MOBILE MENU */
+/* header */
+.toggle{
+    order: 1;
+}
+
+.item.button{
+    order: 2;
+}
+
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    /* display: none;
+    I deactivated this code for javaScript so I can add display block to show the menu as a list during mobile view -if the hamburger bar is clicked-. I added new class name(mobileHide) to the .item in html and .mobileHide and in here css to make the menu items listed as a block with javaScript. mobileHideSM is separately for shopping cart item because I show it in ipad view. */
+}
+
+.item.active{
+    display: block;
+}
+
+.mobileHide, .mobileHideSM{
+    display: none;
+}
+
+.toggle{
+    cursor: pointer;
+}
+
+.hamburgerBar{
+    background: rgb(230, 171, 23);
+    display: inline-block;
+    height:2px;
+    position:relative;
+    width:18px;
+}
+
+
+.hamburgerBar::before,.hamburgerBar::after{
+    background: rgb(230, 171, 23);
+    display: inline-block;
+    height:2px;
+    position:absolute;
+    width:18px;
+    content:"";
+}
+.hamburgerBar::before{
+    top: 5px;
+}
+
+.hamburgerBar::after{
+    top: -5px;
+}
+.menu li.logo img{
+    width: 90px;
+    border: 2px solid  rgb(230, 171, 23);
+    border-radius: 10px;
+}
+
+/* HERO Container Sliding Images */
+.TaglineBox{
+    background-image: url("../images/red\ bracelet1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-top: 20px;
+    border-top: 2px solid  rgb(230, 171, 23);
+    border-bottom: 2px solid rgb(230, 171, 23);
+}
+
+.TaglineBox .TaglineBox-title{
+   float: left;
+   padding: 35px 20px;
+   font-size: 40px;
+   font-family: 'Italiana', serif;
+}
+
+.TaglineBox .love{
+   float: left;
+   padding-left: 20px;
+   font-size: 30px;
+}
+
+
+
+/* IPAD MENU */
+/* Header */
+@media all and (min-width:760px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle{
+        order: 2;
+    }
+    .button{
+        border: 0;
+    }
+    .button a{
+        padding: 8px 15px;
+        background: white;
+        color: black;
+        border: 2px solid  rgb(230, 171, 23);
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .button a:hover{
+        transition:all .25s;
+        color: rgb(207, 149, 2);
+    }
+    .menu li.logo img{
+        width: 120px;
+        border: 2px solid  rgb(230, 171, 23);
+        border-radius: 10px;
+    }
+}
+
+/* DESKTOP MENU */
+/* header */
+@media all and (min-width:1200px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+    .menu li.logo img{
+        width: 150px;
+        border: 2px solid  rgb(230, 171, 23);
+        border-radius: 10px;
+    }
+}
+
+/* MAIN CATEGORIES */
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 15px 15px;
+    border: 1px solid rgb(230, 171, 23);
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    row-gap: 20px;
+}
+
+.redBraceletImage{
+    background-image: url(../beaded/red\ bracelet2.jpg);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+}
+
+.blueBraceletImage{
+    background-image: url(../beaded/blue\ bracelet.jpg);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+}
+
+.bronzeSetImage{
+    background-image: url(../beaded/bronze\ set.jpg);
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+}
+
+.gridInnerBox li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.main-grid .gridInnerBox .picTitles{
+    text-decoration: none;
+    justify-items: center;
+}
+
+.main-grid .gridInnerBox .shop-button{
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 15px 6px;
+    color: black;
+    
+}
+
+/* FOOTER */
+/* footer1 */
+
+
+.footer-box{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    background-color: black;
+}
+
+.firstFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.firstFooter .firstLine{
+    display: flex;
+    padding-top: 15px;
+}
+
+.firstFooter .firstLine ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 10px;
+}
+
+.firstLine ul a{
+    color: rgb(216, 166, 40);
+}
+
+.bottomNav2{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 5px 20px 5px 25px;
+}
+
+.bottomNav2 ul li {
+    display: inline;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.footerTitle{
+    color: rgb(216, 166, 40);
+    font-family: 'Italiana', serif;
+}
