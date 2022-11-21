@@ -30,11 +30,11 @@
     color:rgb(55,55,55);
 }
 
-.trulia-house-price h1 {
+.trulia-featured-grid-item .trulia-house-price h1 {
     font-size: 25px;
 }
 
-.trulia-house-stats {
+.trulia-featured-grid-item .trulia-house-stats {
     flex:1;
     font-size: 16px;
     font-weight: bold;
