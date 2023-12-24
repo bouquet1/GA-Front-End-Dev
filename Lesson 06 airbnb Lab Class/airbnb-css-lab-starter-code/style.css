@@ -39,7 +39,7 @@ align-items: center;
 
 .airBnB-topnav nav ul {
   list-style: none;
-  /* list style none to get rif od the bullets if the ul in the nav */
+  /* list style none to get rid of the bullets if the ul in the nav */
   margin: 0;
   padding: 0;
   /* zero margin and padding so there is no spacing between. we'll space them out with gap*/
