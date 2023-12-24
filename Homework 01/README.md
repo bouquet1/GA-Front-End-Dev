@@ -1,12 +1,14 @@
 #FEWD Week #1: HTML/CSS Basics
+deneme commit
 
 ---
 
 ###Description
 
-The goal of this first assignment is to identify the different parts of content and apply structure to it. The starter content is an excerpt from Wikipedia's article on the Xia Dynasty of China.  Take this content and apply the appropriate HTML and then give it some basic styling.
+The goal of this first assignment is to identify the different parts of content and apply structure to it. The starter content is an excerpt from Wikipedia's article on the Xia Dynasty of China. Take this content and apply the appropriate HTML and then give it some basic styling.
 
 Styling Suggestions:
+
 - Page background should be #F6F6F6
 - Make the paragraph text the font "Georgia" and use a font stack. (Google "Georgia font stack css.")
 - Make the text the color #05080C
@@ -48,10 +50,10 @@ Styling Suggestions:
 
 ###Resources
 
-The original wiki page that this article was taken from is https://en.wikipedia.org/wiki/Xia_dynasty.  The HTML that wikipedia uses will be fairly different and more complex than is ideal for the homework.  Feel free to use it for visual ideas.
+The original wiki page that this article was taken from is https://en.wikipedia.org/wiki/Xia_dynasty. The HTML that wikipedia uses will be fairly different and more complex than is ideal for the homework. Feel free to use it for visual ideas.
 
 ---
 
 ###Evaluation / Submission
 
-The instructional team will grade each technical requirement and provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2).  The maximum possible score on this assignment is 16/16.
+The instructional team will grade each technical requirement and provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2). The maximum possible score on this assignment is 16/16.
